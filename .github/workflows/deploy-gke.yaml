@@ -10,7 +10,7 @@ env:
   GAR_LOCATION: us-central1
   GAR_REPOSITORY: your-artifact-registry-repo
   GKE_CLUSTER: agentic-chatbot-cluster
-  GKE_ZONE: us-central1-c
+  GKE_ZONE: us-central1
   BACKEND_IMAGE_NAME: agentic-chatbot-backend
   FRONTEND_IMAGE_NAME: agentic-chatbot-frontend
 
