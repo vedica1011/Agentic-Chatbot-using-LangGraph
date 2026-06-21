@@ -29,14 +29,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # 1. Authenticate to GCP securely without JSON keys
+    # 1. Authenticate to GCP securely using JSON keys
     - id: 'auth'
       name: 'Authenticate to Google Cloud'
       uses: 'google-github-actions/auth@v2'
       with:
+        credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
         token_format: 'access_token'
-        workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-        service_account: 'my-service-account@my-project.iam.gserviceaccount.com'
 
     # 2. Configure Docker to use Artifact Registry
     - name: Docker Auth
