@@ -6,10 +6,10 @@ on:
       - main
 
 env:
-  PROJECT_ID: your-gcp-project-id
+  PROJECT_ID: linear-axle-295505
   GAR_LOCATION: us-central1
   GAR_REPOSITORY: your-artifact-registry-repo
-  GKE_CLUSTER: your-gke-cluster-name
+  GKE_CLUSTER: agentic-chatbot-cluster
   GKE_ZONE: us-central1-c
   BACKEND_IMAGE_NAME: agentic-chatbot-backend
   FRONTEND_IMAGE_NAME: agentic-chatbot-frontend
